@@ -21,12 +21,12 @@ public class diagonal_sum {
         //         if (j==a.length-i-1 && i!=j) {
         //             sum+=a[i][j];
         //         }
-        //     }
+        //     }                                    //Time complexity = O(n2)
         // }
         for (int i = 0; i < a.length; i++) {
             sum+=a[i][i];
             if (i==(a.length-i-1)) {
-                continue;
+                continue;                            //Time complexity = O(n)
             }
             sum+=a[i][a.length-i-1];
         }
