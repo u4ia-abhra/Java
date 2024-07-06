@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class anagrams {
 
     public static boolean isAnagram(String s1,String s2) {
-        char a[] = s1.toCharArray();
+        char a[] = s1.toCharArray();            //so that we can use inbuit functions of Arrays
         char b[] = s2.toCharArray();
-        Arrays.sort(a);                                    
+        Arrays.sort(a);                         //inbilt sort function           
         Arrays.sort(b);
         if (Arrays.equals(a,b)) {
             return true;                //No loops used
@@ -21,8 +21,8 @@ public class anagrams {
         System.out.print("Enter 1st string: ");
         String s1 = sc.nextLine();
         System.out.print("Enter 2nd string: ");
-        s1.toLowerCase();
         String s2 = sc.nextLine();
+        s1.toLowerCase();//so that we don't have to compare for uppercase seperately
         s2.toLowerCase();
         if (isAnagram(s1,s2)) {
             System.out.println(s1+" and "+s2+" are Anagrams.");
