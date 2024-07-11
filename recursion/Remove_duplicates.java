@@ -11,7 +11,7 @@ public class Remove_duplicates {
         }
     }
     public static void main(String[] args) {
-        String s = "appnnacollege";
+        String s = "eesshfcccjuyurffcgfghgddddd";
         System.out.println(check(s, 0));
     }
 }
